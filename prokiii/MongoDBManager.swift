@@ -16,7 +16,7 @@ class MongoDBManager {
     // Private initializer to set up MongoDB connection
     private init() {
         do {
-            let settings = try ConnectionSettings("mongodb+srv://admin:tdUxTkjuNGj7kLFP@prokiii.jivzgmi.mongodb.net/?retryWrites=true&w=majority")
+            let settings = try ConnectionSettings("")
             let cluster = try MongoCluster(lazyConnectingTo: settings)
             client = cluster["Users"]
         } catch {
