@@ -27,7 +27,7 @@ enum ApiError: Error {
 // Singleton class to manage API operations
 class ApiManager {
     static let shared = ApiManager()
-    private let apiKey = "RGAPI-5f412e1b-9155-48c4-9283-4883f23fd97e"
+    private let apiKey = ""
     private let championRotationURL = "https://na1.api.riotgames.com/lol/platform/v3/champion-rotations"
 
     /// Fetch champion rotations from the Riot Games API
